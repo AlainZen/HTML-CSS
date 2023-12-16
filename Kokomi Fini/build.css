@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eae2e2; /* image qui block */
+    background-image: url("images/Back2.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.keyframe {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid #323131;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.keyframe:hover {
+    transform: scale(1.1);
+}
+/*sert a r*/
+.keyframe1 {
+    background-color: #5b8977;
+}
+
+.keyframe2 {
+    background-color: #c1c186;
+}
+
+.keyframe3 {
+    background-color: #ccccff;
+}
+
+.keyframe4 {
+    background-color: #db9cdc;
+}
+
+/*Bon jai trouver comment mettre des img donc ca sert a r mtn les couleurs mais je laisse on sais jamais*/
+.keyframe a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    background-image: url('images/Kokomi_2.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    display: block; 
+    height: 190px; 
+    width: 190px; 
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .keyframe {
+        width: 80%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+      padding: 10px; 
+  
+    .left-flexbox, .right-flexbox {
+      flex: 1 1 100%; 
+      margin-bottom: 20px; 
+    }
+  
+    .right-flexbox {
+      text-align: left; 
+    }
+  }
+  
+  
+  @media (min-width: 800px) {
+    .container {
+      padding: 20px; 
+    }
+  }
+}
